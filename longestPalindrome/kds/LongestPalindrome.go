@@ -1,5 +1,11 @@
 package kds
 
+/**
+ 定位中心节点，向边界拓展
+ 每个节点中心节点有两个：mid和mid+1（因为字符串长度奇偶的关系）
+ 时间复杂度：O(n2)
+ 空间复杂度：O(1)
+ */
 func LongestPalindrome(s string) string {
 	start, end := 0, 0
 	length := len(s)
