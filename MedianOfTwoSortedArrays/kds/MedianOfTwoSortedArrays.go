@@ -1,6 +1,6 @@
 package kds
 
-func FindMedianSortedArrays1(nums1 []int, nums2 []int) float64 {
+func FindMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	len1, len2 := len(nums1), len(nums2)
 	left1, right1, left2, right2 := 0, len1-1, 0, len2-1
 	var index1, index2 []int
